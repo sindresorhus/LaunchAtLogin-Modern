@@ -74,7 +74,7 @@ The [Mac App Store guidelines](https://developer.apple.com/app-store/review/guid
 
 ### How is this different from the old package?
 
-This is a new repo as the old package had a lot of bloat in its Git history. I also took the oppertunity to make a more minimal API optimized for SwiftUI apps.
+This is a new repo as the old package had a lot of bloat in its Git history. I also took the opportunity to make a more minimal API optimized for SwiftUI apps.
 
 ## Related
 
