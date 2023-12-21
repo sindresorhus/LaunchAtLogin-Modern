@@ -1,3 +1,4 @@
+#if os(macOS) || targetEnvironment(macCatalyst)
 import SwiftUI
 import ServiceManagement
 import os.log
@@ -118,3 +119,4 @@ extension LaunchAtLogin.Toggle<Text> {
 		self.init("Launch at login")
 	}
 }
+#endif
