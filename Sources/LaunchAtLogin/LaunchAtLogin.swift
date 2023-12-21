@@ -30,6 +30,17 @@ public enum LaunchAtLogin {
 			}
 		}
 	}
+
+	/**
+	Whether the app was launched at login.
+
+	- Important: This property must only be checked in `NSApplicationDelegate#applicationDidFinishLaunching`.
+	*/
+	public static var wasLaunchedAtLogin: Bool {
+		let event = NSAppleEventManager.shared().currentAppleEvent
+		return event?.eventID == kAEOpenApplication
+			&& event?.paramDescriptor(forKeyword: keyAEPropData)?.enumCodeValue == keyAELaunchedAsLogInItem
+	}
 }
 
 extension LaunchAtLogin {

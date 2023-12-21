@@ -1,4 +1,4 @@
-# LaunchAtLogin *(Modern)*
+# LaunchAtLogin
 
 > Add “Launch at Login” functionality to your macOS app in seconds
 
