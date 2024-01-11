@@ -3,6 +3,7 @@ import PackageDescription
 
 let package = Package(
 	name: "LaunchAtLogin",
+	defaultLocalization: "en",
 	platforms: [
 		.macOS(.v13),
 		.macCatalyst(.v16)

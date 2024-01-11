@@ -127,7 +127,7 @@ extension LaunchAtLogin.Toggle<Text> {
 	Creates a toggle with the default title of `Launch at login`.
 	*/
 	public init() {
-		self.init("Launch at login")
+		self.init(NSLocalizedString("toggle_label", bundle: .module, comment: "Text label for 'Launch at login' toggle"))
 	}
 }
 #endif
