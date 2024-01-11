@@ -107,8 +107,8 @@ extension LaunchAtLogin.Toggle<Text> {
 	- Parameters:
 		- titleKey: The key for the toggle's localized title, that describes the purpose of the toggle.
 	*/
-	public init(_ titleKey: LocalizedStringKey) {
-		label = Text(titleKey)
+	public init(_ titleKey: LocalizedStringKey, bundle: Bundle? = nil) {
+		label = Text(titleKey, bundle: bundle)
 	}
 
 	/**
@@ -127,7 +127,7 @@ extension LaunchAtLogin.Toggle<Text> {
 	Creates a toggle with the default title of `Launch at login`.
 	*/
 	public init() {
-		self.init(NSLocalizedString("toggle_label", bundle: .module, comment: "Text label for 'Launch at login' toggle"))
+		self.init("toggle_label", bundle: .module)
 	}
 }
 
