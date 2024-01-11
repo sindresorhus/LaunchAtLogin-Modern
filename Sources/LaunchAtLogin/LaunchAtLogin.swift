@@ -130,4 +130,13 @@ extension LaunchAtLogin.Toggle<Text> {
 		self.init(NSLocalizedString("toggle_label", bundle: .module, comment: "Text label for 'Launch at login' toggle"))
 	}
 }
+
+#Preview {
+	LaunchAtLogin.Toggle()
+		.environment(\.locale, .init(identifier: "en"))
+}
+#Preview {
+	LaunchAtLogin.Toggle()
+		.environment(\.locale, .init(identifier: "pt-BR"))
+}
 #endif
